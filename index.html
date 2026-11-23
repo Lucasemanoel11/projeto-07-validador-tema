@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validador de Acesso e Alternador de Tema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tema-escuro">
+  <main class="container-acesso">
+    <header class="cabecalho-painel">
+      <h1>Salão de Leituras e Cordas</h1>
+      <button type="button" id="botao-tema" class="botao-tema">Alternar tema</button>
+    </header>
+
+    <form id="formulario-acesso" class="formulario-acesso" novalidate>
+      <p class="descricao-acesso">
+        Chave de acesso para o caderno de violino, prosa francesa e filosofia.
+      </p>
+
+      <label for="campo-senha" class="rotulo-campo">Senha de acesso</label>
+      <input type="password" id="campo-senha" class="campo-senha" autocomplete="off">
+
+      <p id="mensagem-validacao" class="mensagem-validacao">
+        A senha precisa de pelo menos 8 caracteres e 1 número.
+      </p>
+
+      <button type="submit" id="botao-entrar" class="botao-entrar">Entrar</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
